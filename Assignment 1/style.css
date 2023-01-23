@@ -1,0 +1,49 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("imgs/deer.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: 300;
+}
+.parallax-container{
+    box-sizing: border-box;
+    min-height: 100vh;
+    min-width: 20vh;
+    min-height: 50vh;
+    background-color:rgba(151, 157, 231, 0.5);
+    padding: 2em;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 2cm;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, .8);
+}
+.parallax {
+ background-image: url("imgs/deer.jpg");
+  min-height: 500px;
+   background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-image {
+    
+    background-image:  url("imgs/mountain.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+  }
