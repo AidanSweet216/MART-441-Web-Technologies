@@ -1,0 +1,3 @@
+# Week 1 README response
+Creating the webpage for this week wasn't very difficult for me outside of figuring out the CSS for getting parallax to work properly
+I also simply needed a refresher in how to write CSS as it has been a while since I have done any sort of web development. I believe that I took MART 341 last Spring so I  needed to read a bit in order to get back on track. The Web3 school resources were a big help in getting me back on track and once I got some simple CSS styling written down putting together the html was very easy. I think I was able to create a page that has a good flow to it and looks nice without having to do a ton of styling.
