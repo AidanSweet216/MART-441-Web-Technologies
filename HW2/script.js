@@ -1,3 +1,4 @@
+//This JavaScript file is for practicing executing a console log
 console.log("My 3 favorite websites: Crunchyroll.com, lttstore.com, and Youtube.com ")
 console.log("My 3 favorite games: Counter Strike Global Offensive, Halo Infinite, Deep Rock Galactic")
 console.log("My 3 favorite artists: Hirohiko Araki, as a prominant manga artist since the 1980s Araki has had a massive impact in the manga and pop culuture world. Kentaro Miura, Mirura not only created one of the best dark fantasy stories put on paper with Berserk but has also created some of the most breathtaking illustrations ever put into a manga. My third and final favorite artist is Guy Buffet, I'm not sure if hes has had much of a cultural impact but I really enjoy his use of vibrant colors as well as how he conveys people in motion in his various paintings of bartenders mixing drinks.")
