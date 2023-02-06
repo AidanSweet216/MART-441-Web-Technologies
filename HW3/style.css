@@ -1,0 +1,32 @@
+body {
+    background-color: #F2E8D9;
+    font-family: sans-serif;
+    text-align: center;
+    background-image: url("/HW3/imgs/Forest.jpg");
+  }
+  
+  #title {
+    color: #2d0edd9d;
+  }
+  
+  #story {
+    color: #130d13;
+    font-size: 18px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ADD8E6;
+    cursor: pointer;
+  }
+  
+  #result {
+    color: #8989f3;
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  
