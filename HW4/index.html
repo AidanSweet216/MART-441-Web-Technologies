@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    
+    <div id = "question">
+    <h1 id="title">Going on an Adventure</h1>
+    <p id="story">You are on a quest for adventure and gold in a magical forest. You come across a fork in the road. Do you go left or right?</p>
+    </div>
+    <br>
+    <div id = "content">
+    <input id ="answer" type="text" size="30" value="Enter Right or Left">
+    <button id="submit" onclick="getAnswer1()">Submit</button>
+  
+    <input id ="answer2" type="text" size="30" value="Enter or Leave" style="display:none;">
+    <button id="submit2" onclick="getAnswer2()" style="display: none;">Submit</button>
+
+    <input id ="answer4" type="text" size="30" value="Enter or Leave" style="display:none;">
+    <button id="submit4" onclick="getAnswer4()" style="display: none;">Submit</button>
+
+    <input id ="answer3" type="text" size="30" value="Jump or Bridge" style="display: none;">
+    <button id="submit3" onclick="getAnswer3()" style="display: none;">Submit</button>
+
+    <input id ="answer5" type="text" size="30" value="Take or Leave?" style="display: none;">
+    <button id="submit5" onclick="getAnswer5()" style="display: none;">Submit</button>
+    <button id="reset" value="Reload Site" onClick="window.location.reload();">Reload Site</button>
+    </div>
+
+  </body>
+  <script src="script.js"></script>
+</html>
