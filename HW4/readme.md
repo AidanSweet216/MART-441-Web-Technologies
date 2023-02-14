@@ -1,0 +1,2 @@
+# Week 4 ReadME
+This week I struggled with getting some of my functions for swapping the questions in the choose your own adventure scenario. A few of the issues were simple syntax errors but some I really don't know what was wrong. The function just wouldn't work properly even though there were no errors and then all of the sudden they would be working. 
