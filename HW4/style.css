@@ -4,7 +4,7 @@ body {
     font-size: 25px;
     font-family: sans-serif;
     text-align: center;
-    background-image: url("/HW4/imgs/Forest.jpg");
+    background-image: url("imgs/Forest.jpg");
   }
   
   #title {
