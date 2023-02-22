@@ -1,0 +1,29 @@
+body {
+    background-color: #F8EFE0; /* light beige */
+    font-family: 'Helvetica Neue', sans-serif; /* clean and modern font */
+    color: #4A3731; /* dark brown */
+    text-align:center;
+    font-size: larger;
+  }
+  
+.divContainer{
+display: table;
+width: 100%;
+}
+.divContainerBody {
+	display: table-row-group;
+}
+.divContainerRow{
+    display: table-row;
+}
+.divCell{
+    display: table-cell;
+    border: 2px solid;
+    padding: 3px 10px;
+}
+h1, h2, h3 {
+    font-family: 'Merriweather', serif; /* warm and inviting font */
+    color: #8E3B24; /* burnt orange */
+  }
+  
+  
