@@ -1,5 +1,5 @@
 var imgNames = ["img1","img2","img3","img4","img5","img6","img7","img8","img9","img10"];
-var imgCover = "imgs/question.jpg";
+var imgCover = "/imgs/question.jpg";
 var realIMG = new Array();
 
 function createCovers()
@@ -13,13 +13,13 @@ function createCovers()
 
 function createImageArray()
 {
-    var imgPath = ["img/hamish.jpg","img/reindeer.jpg","/img/beagle",/]
+    var imgPath = ["imgs/hamish.jpg","imgs/reindeer.jpg","/imgs/beagle.jpg","/imgs/bird.jpg","/imgs/calf.jpg","/imgs/cat.jpg","/imgs/fergus.jpg","/imgs/field.jpg","/imgs/statue.jpg","/imgs/trees.jpg"]
     var counter = [0,0]
-    while(realIMG <4)
+    while(realIMG < 10)
     {
-        var randomNumber = Math.floor(Math.random() * actualImagePath.length)
+        var randomNumber = Math.floor(Math.random() * imgPath.length)
     }
-    if(counter[randomNumber] < 2)
+    if(counter[randomNumber] < 0)
     {
         realIMG.push(imgPath[randomNumber]);
         counter[randomNumber] = counter[randomNumber] + 1;
@@ -28,5 +28,5 @@ function createImageArray()
 
 function showIMG()
 {
-    document.getElementById(imageTags[number]).src= actualImages[number];
+    document.getElementById(imgNames[randomNumber]).src= realIMG[randomNumber];
 }
