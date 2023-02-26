@@ -1,6 +1,7 @@
 var imgNames = ["img1","img2","img3","img4","img5","img6","img7","img8","img9","img10"];
 var imgCover = "/imgs/question.jpg";
 var realIMG = new Array();
+var randomNumber;
 
 function createCovers()
 {
