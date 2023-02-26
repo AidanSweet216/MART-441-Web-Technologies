@@ -14,20 +14,21 @@ function createCovers()
 
 function createImageArray()
 {
-    var imgPath = ["imgs/hamish.jpg","imgs/reindeer.jpg","/imgs/beagle.jpg","/imgs/bird.jpg","/imgs/calf.jpg","/imgs/cat.jpg","/imgs/fergus.jpg","/imgs/field.jpg","/imgs/statue.jpg","/imgs/trees.jpg"]
-    var counter = [0,0]
+    var imgPath = ["imgs/hamish.jpg","imgs/reindeer.jpg","imgs/beagle.jpg","imgs/bird.jpg","imgs/calf.jpg","imgs/cat.jpg","imgs/fergus.jpg","imgs/field.jpg","imgs/statue.jpg","imgs/trees.jpg"]
+    var counter = [0,0,0,0,0,0,0,0,0,0,0]
     while(realIMG < 10)
     {
         var randomNumber = Math.floor(Math.random() * imgPath.length)
+        if(counter[randomNumber] < 0)
+        {
+            realIMG.push(imgPath[randomNumber]);
+            counter[randomNumber] = counter[randomNumber] + 1;
+        }
     }
-    if(counter[randomNumber] < 0)
-    {
-        realIMG.push(imgPath[randomNumber]);
-        counter[randomNumber] = counter[randomNumber] + 1;
-    }
+   
 }
 
 function showIMG()
 {
-    document.getElementById(imgNames[randomNumber]).src= realIMG[randomNumber];
+    document.getElementById(imgNames[number]).src= realIMG[number];
 }
