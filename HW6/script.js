@@ -81,7 +81,7 @@ function newPlayer()
     player.playerFirst = playerFirst;
     player.playerLast = playerLast;
     player.playerAge = playerAge;
-    player.score = playerScore
+    player.score = playerScore;
     localStorage.setItem("playerInfo", JSON.stringify(player));
     window.location = "index.html";
     console.log("Im clicking");
