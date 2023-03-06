@@ -10,6 +10,17 @@ var realIMG = new Array();
 // a variable to store the randomly generated number
 var randomNumber;
 
+//variable to keep track of the player attempts
+var attempts = 0;
+
+// a variable to declare player info in the JSON 
+var player = {"playerFirst":"", "playerLast":"", "playerAge":0, "attempts":0};
+
+//player score
+var playerScore = 0;
+
+
+
 // a function to set all image elements to the placeholder image
 function createCovers()
 {
@@ -53,5 +64,45 @@ function createImageArray()
 // a function to show an image when clicked by setting its source to the corresponding path in the realIMG array
 function showIMG(number)
 {
+    var currentImage = document.getElementById(imgNames[number]).src;
     document.getElementById(imgNames[number]).src= realIMG[number];
+    if (currentImage === realIMG[number]) {
+        player.score += 1;
+        playerScore++;
+        player.score = playerScore;
+    }
+  
+}
+//a function that collects the player info into the JSON
+function newPlayer()
+{
+    // create variables for gathering player info
+    var playerFirst = document.getElementById("firstName").value;
+    var playerLast = document.getElementById("lastName").value;
+    var playerAge = document.getElementById("age").value;
+
+    player.playerFirst = playerFirst;
+    player.playerLast = playerLast;
+    player.playerAge = playerAge;
+    localStorage.setItem("playerInfo", JSON.stringify(player));
+    window.location = "index.html";
+    console.log("Im clicking");
+}
+
+
+//display info from the JSON
+
+function playerInfo()
+{
+    
+    var playerInformation = localStorage.getItem("playerInfo");
+    player = JSON.parse(playerInformation);
+    var str = "Player Name: " + player.playerFirst + " " + player.playerLast + "<br>" +
+    "Player Age: " + player.playerAge + " Player Score:" + player.score +"<br>";
+    
+    if(document.getElementById("endInfo") != null)
+    {
+        document.getElementById("endInfo").innerHTML = str;
+    }
+    
 }
