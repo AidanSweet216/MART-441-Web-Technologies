@@ -10,11 +10,10 @@ var realIMG = new Array();
 // a variable to store the randomly generated number
 var randomNumber;
 
-//variable to keep track of the player attempts
-var attempts = 0;
+
 
 // a variable to declare player info in the JSON 
-var player = {"playerFirst":"", "playerLast":"", "playerAge":0, "attempts":0};
+var player = {"playerFirst":"", "playerLast":"", "playerAge":0, "score":0};
 
 //player score
 var playerScore = 0;
@@ -67,9 +66,8 @@ function showIMG(number)
     var currentImage = document.getElementById(imgNames[number]).src;
     document.getElementById(imgNames[number]).src= realIMG[number];
     if (currentImage === realIMG[number]) {
-        player.score += 1;
+        playerScore + 1;
         playerScore++;
-        player.score = playerScore;
     }
   
 }
@@ -84,6 +82,7 @@ function newPlayer()
     player.playerFirst = playerFirst;
     player.playerLast = playerLast;
     player.playerAge = playerAge;
+    player.score = playerScore
     localStorage.setItem("playerInfo", JSON.stringify(player));
     window.location = "index.html";
     console.log("Im clicking");
