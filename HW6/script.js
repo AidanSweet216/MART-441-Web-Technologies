@@ -66,7 +66,6 @@ function showIMG(number)
     var currentImage = document.getElementById(imgNames[number]).src;
     document.getElementById(imgNames[number]).src= realIMG[number];
     if (currentImage === realIMG[number]) {
-        playerScore + 1;
         playerScore++;
     }
   
