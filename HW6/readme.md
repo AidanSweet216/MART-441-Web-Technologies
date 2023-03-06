@@ -1,2 +1,1 @@
-# Week 5 ReadME
-This week was really difficult for me. It took me forever to get the JavaScript to work properly. Whenever I would think I was close to getting everything working properly I would hit a new roadblock with my code. I think my own personal frustration with myself and my inability to get the code working really held me back. At times I just wanted to give up and step away from this assignment. I ended up getting it working properly by getting help from Michael Cassens. He has been a great professor and mentor to me in my time at UMT and is alway available to help me with coding problems. I really appreciate all the help he has given me on this assignment and overall in my time at the university.
+# Week 6 ReadME
