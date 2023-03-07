@@ -9,7 +9,8 @@ var realIMG = new Array();
 
 // a variable to store the randomly generated number
 var randomNumber;
-
+var number1 = null;
+var number2 = null;
 
 
 // a variable to declare player info in the JSON 
@@ -63,12 +64,46 @@ function createImageArray()
 // a function to show an image when clicked by setting its source to the corresponding path in the realIMG array
 function showIMG(number)
 {
-    var currentImage = document.getElementById(imgNames[number]).src;
+    var myInterval
+   var numberOfClicks = 0;
     document.getElementById(imgNames[number]).src= realIMG[number];
-    if (currentImage === realIMG[number]) {
-        playerScore++;
+    numberOfClicks ++;
+    console.log("Clicks:" + numberOfClicks);
+    if (numberOfClicks == 1) {
+        number1 = imgNames[number];
     }
-  
+        else if(numberOfClicks== 2){
+            number2 = imgNames[number];
+        }
+
+        if (number1==number2)
+        {
+            numberOfClicks=0;
+            number1=null;
+            number2=null;
+            localStorage.setItem("playerInfo", JSON.stringify(player));
+        playerScore++;
+        if(playerScore = 5)
+        {
+            window.location = "end.html";
+        }
+        console.log("score:"+ playerScore);
+        }
+
+        else if(number1 !== number2)
+        {
+            myInterval = setInterval(flipImage,1000);
+        }
+    
+}
+
+function flipImage()
+{
+    document.getElementById(realIMG[number1]).src= "imgs/question.jpg";
+    document.getElementById(realIMG[number2]).src= "imgs/question.jpg";
+    number1 = -1;
+    number2 = -1;
+    clearInterval(myInterval);
 }
 //a function that collects the player info into the JSON
 function newPlayer()
@@ -81,7 +116,6 @@ function newPlayer()
     player.playerFirst = playerFirst;
     player.playerLast = playerLast;
     player.playerAge = playerAge;
-    player.score = playerScore;
     localStorage.setItem("playerInfo", JSON.stringify(player));
     window.location = "index.html";
     console.log("Im clicking");
