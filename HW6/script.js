@@ -65,8 +65,8 @@ function showIMG(number)
 {
     var myInterval
    var numberOfClicks = 0;
-   var number1 = 0;
-   var number2= 0;
+   var number1 = -1;
+   var number2= -1;
     document.getElementById(imgNames[number]).src= realIMG[number];
     numberOfClicks ++;
     console.log("Clicks:" + numberOfClicks);
