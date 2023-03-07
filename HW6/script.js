@@ -9,8 +9,7 @@ var realIMG = new Array();
 
 // a variable to store the randomly generated number
 var randomNumber;
-var number1 = null;
-var number2 = null;
+
 
 
 // a variable to declare player info in the JSON 
@@ -66,6 +65,8 @@ function showIMG(number)
 {
     var myInterval
    var numberOfClicks = 0;
+   var number1 = 0;
+   var number2= 0;
     document.getElementById(imgNames[number]).src= realIMG[number];
     numberOfClicks ++;
     console.log("Clicks:" + numberOfClicks);
@@ -79,8 +80,8 @@ function showIMG(number)
         if (number1==number2)
         {
             numberOfClicks=0;
-            number1=null;
-            number2=null;
+            number1=-1;
+            number2=-1;
             localStorage.setItem("playerInfo", JSON.stringify(player));
         playerScore++;
         if(playerScore = 5)
