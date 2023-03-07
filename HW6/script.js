@@ -71,10 +71,10 @@ function showIMG(number)
     numberOfClicks ++;
     console.log("Clicks:" + numberOfClicks);
     if (numberOfClicks == 1) {
-        number1 = imgNames[number];
+        realIMG[number] = number1;
     }
         else if(numberOfClicks== 2){
-            number2 = imgNames[number];
+            realIMG[number] = number2;
         }
 
         if (number1==number2)
@@ -82,11 +82,11 @@ function showIMG(number)
             numberOfClicks=0;
             number1=-1;
             number2=-1;
+           playerScore++;
             localStorage.setItem("playerInfo", JSON.stringify(player));
-        playerScore++;
-        if(playerScore = 5)
+        if(playerScore == 5)
         {
-            window.location = "end.html";
+           window.location = "end.html";
         }
         console.log("score:"+ playerScore);
         }
@@ -102,8 +102,7 @@ function flipImage()
 {
     document.getElementById(realIMG[number1]).src= "imgs/question.jpg";
     document.getElementById(realIMG[number2]).src= "imgs/question.jpg";
-    number1 = -1;
-    number2 = -1;
+   
     clearInterval(myInterval);
 }
 //a function that collects the player info into the JSON
