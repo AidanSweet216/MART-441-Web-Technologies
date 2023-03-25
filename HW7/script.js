@@ -28,7 +28,7 @@ class combineID
         myArray.push(view2);
         var view3 = new combineID("imgs/Art 3.jpg","Poumons des océans","Each piece showcases the dazzling textures and diverse forms of coral, but they also visualize how vulnerable our reefs are","Created by: Aude Bourgine ","2018");
         myArray.push(view3);
-        var view4 = new combineID("imgs/Art 4.png","Anyone Can Save The Ocean","The plastic bag represents the ocean and a sea turtle is trapped inside. A plastic bag is stuck on its head making it the bags victim. The person is the injurer since the person is the consumer of the bag. ","Created by: Becky Ni","2017");
+        var view4 = new combineID("imgs/Art 4.PNG","Anyone Can Save The Ocean","The plastic bag represents the ocean and a sea turtle is trapped inside. A plastic bag is stuck on its head making it the bags victim. The person is the injurer since the person is the consumer of the bag. ","Created by: Becky Ni","2017");
         myArray.push(view4);
         var view5 = new combineID("imgs/Art 5.jpg","Coralium","From fringing reefs to stoney barnacles, the stunning wall-mounted artwork brims with a multitude of lush textures, just like its real-life counterpart (if healthy). Hipolytes choice of medium allows her to express the fragility of the underwater ecosystem, which is sadly in danger due to coral mining, pollution, and warming temperatures.","Created by: Mlle Hipolyte","2018");
         myArray.push(view5);
