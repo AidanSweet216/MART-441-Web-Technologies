@@ -7,28 +7,38 @@
        <script src = "script.js">
        </script>
       </head>
-      <body >
+      <body onload="createCovers()">
         
-        <h1>Welcome, please sign in</h1>
-      
+        <h1>Guess the picture</h1>
+        <h2> Try your memory in this simple game</h2>
 
         <div class="Container">
             <div class="ContainerBody">
             <div class="ContainerRow">
-                <div class="ContainerCell">Enter your first name</div>
-                <div class="ContainerCell"><input type="text" id="firstName"></div>
+                <div class="ContainerCell"><img src="" id="img1" width="250" height="200" onclick="showIMG(0);"></div>
+                <div class="ContainerCell"><img src="" id="img2" width="250" height="200" onclick="showIMG(1);"></div>
             </div>
             <div class="ContainerRow">
-                <div class="ContainerCell">Enter your last name</div>
-                <div class="ContainerCell"><input type="text" id="lastName"></div>
+                <div class="ContainerCell"><img src="" id="img3" width="250" height="200" onclick="showIMG(2);"></div>
+                <div class="ContainerCell"><img src="" id="img4" width="250" height="200" onclick="showIMG(3);"></div>
             </div>
             <div class="ContainerRow">
-                <div class="ContainerCell">Enter your age</div>
-                <div class="ContainerCell"><input type="text" id="age"></div>
+                <div class="ContainerCell"><img src="" id="img5" width="250" height="200" onclick="showIMG(4);"></div>
+                <div class="ContainerCell"><img src="" id="img6" width="250" height="200" onclick="showIMG(5);"></div>
             </div>
+            <div class="ContainerRow">
+                <div class="ContainerCell"><img src="" id="img7" width="250" height="200" onclick="showIMG(6);"></div>
+                <div class="ContainerCell"><img src="" id="img8" width="250" height="200" onclick="showIMG(7);"></div>
+            </div>
+            <div class="ContainerRow">
+                <div class="ContainerCell"><img src="" id="img9" width="250" height="200" onclick="showIMG(8);"></div>
+                <div class="ContainerCell"><img src="" id="img10" width="250" height="200" onclick="showIMG(9);"></div>
+            </div>
+
             <div class="divTableRow">
-                <div class="divTableCell"><button id="btnSubmit" onclick="newPlayer();">Submit</button></div>
+                <div class="divTableCell">Can't find 5 matching sets? Thats ok, click here to see your score<button id="btnSubmit" onclick="location.href= 'end.html'">See score</button></div>
             </div>
+        
            </div>
         </div>
       </body>
