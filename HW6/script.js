@@ -130,7 +130,7 @@ function newPlayer() {
     player.playerLast = playerLast;
     player.playerAge = playerAge;
     localStorage.setItem("playerInfo", JSON.stringify(player));
-    window.location = "index.html";
+    window.location = "game.html";
     console.log("Im clicking");
 }
 
