@@ -1,0 +1,2 @@
+# Week 8 Homework
+This week was pretty fun. I am used to using external JavaScript libraries such as P5JS and it was fun getting to learn Jquery. Jquery is pretty easy to understand once you get the hang of it and I think I was able to understand it pretty quickly. I also spaced out my work over a few days again and this was a big help in managing the stress of getting the assignment done on time and also giving me room for error and troubleshooting.
