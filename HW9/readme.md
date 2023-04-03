@@ -1,0 +1,2 @@
+# Week 9 Homework
+This week was pretty fun. Getting to learn about AJAX and how to tie it into my pages with Jquery was an interesting experience. It took me a bit to figure things out but once I did it was smooth sailing from there. I think I've been able to strike a good balance for getting my work done and making sure I really understand the material each week. Im really looking forward to hopefully being able to start on our final projects for the semester soon.
