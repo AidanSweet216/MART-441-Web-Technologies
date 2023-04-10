@@ -1,0 +1,2 @@
+# Week 11 Homework
+This week was fun and challenging. Learning the new things that can be done with HTML5 such as displaying video and audio was fun and a nice refresher as I have done that before in previous Web Design classes. I spread out my work over the span of the weekend and was able to work through different parts of the code step by step using the resources from this week's lessons in order to work through the issues I ran into.
