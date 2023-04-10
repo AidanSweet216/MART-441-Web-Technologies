@@ -46,10 +46,10 @@ function getKey(event) {
 
     if (didCollide) {
         canvas.style.backgroundColor = "blue";
-        player.setWidth(player.theWidth - 1);
-        player.setHeight(player.theHeight - 1);
-        square.setWidth(square.theWidth + 1);
-        square.setHeight(square.theHeight + 1);
+        player.setWidth(player.width - 1);
+        player.setHeight(player.height - 1);
+        square.setWidth(square.width+ 1);
+        square.setHeight(square.height + 1);
     }
     // move the player square
     var char = event.which || event.keyCode;
