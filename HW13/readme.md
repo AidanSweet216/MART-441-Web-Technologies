@@ -1,0 +1,2 @@
+# Week 13
+Working with Phaser this week was a lot of fun. Development was very smooth and easy to understand. I also really enjoyed getting to make a game as that is more my speed when it comes to development as I am in the Game Design program. Having a walkthrough on how to work within phaser was a big help as well. If this is where the content of the class is going in the last couple of weeks I am really excited.
