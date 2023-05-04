@@ -132,11 +132,22 @@ function loadModel() {
     animateModel();
   });
 }
+function loadModel2() {
+    loader = new THREE.OBJLoader();
+    loader.load('models/man.obj', function (object) {
+      object.rotation.z = Math.PI;
+      modelObject2 = object;
+      modelObject2.position.set(5,0);
+      scene.add(object);
+      animateModel();
+    });
+  }
 
 function animateModel() {
   requestAnimationFrame(animateModel);
   modelObject.rotation.x += 0.25;
   modelObject.rotation.y += 0.25;
+  modelObject2.rotation.x += 0.5;
 }
 
 
@@ -156,6 +167,6 @@ var controls = getControls(camera, renderer);
 var game1 = createBox();
 
 
-loadModel()
-
+loadModel();
+loadModel2();
 render();
