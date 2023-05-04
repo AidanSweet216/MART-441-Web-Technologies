@@ -138,6 +138,9 @@ function loadModel2() {
       object.rotation.z = Math.PI;
       modelObject2 = object;
       modelObject2.position.set(5,0);
+      modelObject2.scale.x = 5; 
+      modelObject2.scale.y = 5; 
+      modelObject2.scale.z = 5; 
       scene.add(object);
       animateModel();
     });
@@ -145,9 +148,10 @@ function loadModel2() {
 
 function animateModel() {
   requestAnimationFrame(animateModel);
-  modelObject.rotation.x += 0.25;
-  modelObject.rotation.y += 0.25;
-  modelObject2.rotation.x += 0.5;
+  modelObject.rotation.x += 0.025;
+  modelObject.rotation.y += 0.025;
+  modelObject2.rotation.y += 0.01;
+  modelObject2.rotation.x += 0.01;
 }
 
 
