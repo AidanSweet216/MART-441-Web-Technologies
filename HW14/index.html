@@ -1,56 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>My first three.js app</title>
-        <style>
-            body { margin: 0; }
-            canvas { display: block; }
-        </style>
-    </head>
-    <body>
-        <script src="js/three.js"></script>
-        <script src="js/OBJLoader.js"></script>
-        <script>
-            var scene = new THREE.Scene();
-            var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
-            var renderer = new THREE.WebGLRenderer();
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Aidan Sweet`">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework 14</title>
 
-            renderer.setSize( window.innerWidth, window.innerHeight );
+</head>
 
-            document.body.appendChild( renderer.domElement );
+<body>
+  <script src="js/three.min.js">
+  </script>
+  <script src="js/OBJLoader.js">
+  </script>
+  <script src="js/TrackballControls.js"></script>
+  <script src="js/script.js"></script>
 
-            var geometry = new THREE.BoxGeometry();
-            var material = new THREE.MeshBasicMaterial({
-                color: 0x00ff00
-            });
-            var cube = new THREE.Mesh(geometry, material);
-            scene.add(cube);
+</body>
 
-            var cube2 = new THREE.Mesh(geometry, material);
-            cube2.position.set(-1,-1,1);
-            scene.add(cube2);
-
-            // Load 3D model using OBJLoader
-            //var loader = new THREE.OBJLoader();
-           // loader.load( 'models/stein.glb', function ( object ) {
-                // Add model to scene
-              //  scene.add( object );
-           // });
-
-            camera.position.z = 5;
-
-            function animate() {
-                requestAnimationFrame( animate );
-                cube.rotation.x += 0.01;
-                cube.rotation.y += 0.01;
-                cube2.rotation.x += 0.01;
-                cube2.rotation.y -= 0.01;
-                renderer.render( scene, camera );
-            }
-
-            animate();
-        </script>
-    </body>
 </html>
