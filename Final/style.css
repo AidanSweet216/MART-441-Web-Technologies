@@ -1,0 +1,122 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    background-color: #5d5c61;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header styles */
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: #f8f8f8;
+    text-shadow: 1px 1px #5d5c61;
+    text-decoration: underline;
+    
+}
+p{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: #f8f8f8;
+    text-shadow: 1px 1px #5d5c61;
+}
+
+/* Subheader styles */
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    color: #f8f8f8;
+    text-shadow: 1px 1px #5d5c61;
+}
+
+/* Container styles */
+#Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image styles */
+img {
+    width: 800px;
+    height: 600px;
+    margin: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Link styles */
+a {
+    color: #f8f8f8;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: #e6bb53;
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f8f8f8;
+    text-shadow: 1px 1px #5d5c61;
+    background-color: #9d8c77;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e6bb53;
+}
+/* Navigation styles */
+nav {
+    background-color: #9d8c77;
+    padding: 1rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    color: #f8f8f8;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px #5d5c61;
+    transition: 0.3s ease;
+}
+
+li {
+    margin: 0 1rem;
+}
+
+a {
+    color: #f8f8f8;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px #5d5c61;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: #e6bb53;
+}
